@@ -1,0 +1,6 @@
+0x0000 add x10 x0 x10
+0x0004 addi x11 x0 15
+0x0008 add x12 x0 x10
+0x000c add x13 x0 x11
+0x0010 add x14 x0 x10
+0x0014 SON
