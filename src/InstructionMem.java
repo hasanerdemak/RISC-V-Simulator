@@ -14,6 +14,7 @@ public class InstructionMem {
             reader = new BufferedReader(new FileReader(fileName));
             String line = reader.readLine();
             while (line != null) {
+                //adres ve buyruk kısmını key-value pairi olarak kaydet
                 instructionMem.put(Integer.parseInt(line.substring(2,line.indexOf(' ')),16), line.substring(line.indexOf(' ')+1));
                 System.out.println(line);
                 line = reader.readLine();
