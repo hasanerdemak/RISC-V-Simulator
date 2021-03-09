@@ -1,4 +1,3 @@
-
 public class RegisterGroup {
     private int[] registers = new int[32];
 
@@ -9,16 +8,11 @@ public class RegisterGroup {
     }
 
     public int getRegister(int i) {
-        if (i<0 || i>31)
-            throw new IllegalArgumentException("Register icin yanlis index");
         return registers[i];
     }
 
     public void setRegister(int i, int value) {
-        if (i==0)
-            throw new IllegalArgumentException("0. Register'in degeri degistirilemez.");
-        if (i<0 || i>31)
-            throw new IllegalArgumentException("Register icin yanlis index");
-        registers[i] = value;
+        if (i>0 && i<32)
+            registers[i] = value;
     }
 }

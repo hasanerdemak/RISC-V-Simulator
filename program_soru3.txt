@@ -1,0 +1,31 @@
+0x0000: addi x10 x0 A	
+0x0004: addi x3 1
+0x0008: addi x8 x10 0
+0x000c: subi x9 x10 1
+0x0010: jal x1 78
+
+0x0100: bge x11 x3 380 		
+0x0104: addi x13 x0 1
+0x0108: jal 
+0x010c:  
+0x0110:  
+0x0114:  
+0x0118:  
+
+0x0200: jal x20 2
+0x0204: add x13 x13 x10
+0x0208: subi x9 x9 1
+0x020c: bne x9 x0 FFFA
+0x0210: subi x9 x10 1
+0x0214: beq x9 x0 2F6
+0x0218: jalr x20 
+
+
+0x0800: add x12 x0 x13
+0x0804: addi x21 x0 3
+0x0808: and x22 x12 x21
+0x080c: beq x22 x21 6
+0x0810: addi x14 x1 1
+0x0814: SON
+0x0818: addi x14 x0  0
+0x081c: SON

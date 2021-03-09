@@ -1,9 +1,7 @@
-import java.util.ArrayList;
-
 public class DataMem {
     private int[] dataMem;
     public DataMem(){
-        dataMem = new int[2^18]; //(2^20)%4
+        dataMem = new int[(int) Math.pow(2,18)]; //(2^20)%4
     }
 
     public int getDataMem(int address) {

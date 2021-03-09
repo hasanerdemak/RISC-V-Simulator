@@ -1,9 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Hashtable;
 
 public class InstructionMem {
     private static HashMap<Integer,String> instructionMem;
@@ -15,8 +13,8 @@ public class InstructionMem {
             String line = reader.readLine();
             while (line != null) {
                 //adres ve buyruk kısmını key-value pairi olarak kaydet
-                instructionMem.put(Integer.parseInt(line.substring(2,line.indexOf(' ')),16), line.substring(line.indexOf(' ')+1));
-                System.out.println(line);
+                if (!line.equals(""))
+                    instructionMem.put(Integer.parseInt(line.substring(2,line.indexOf(' ')),16), line.substring(line.indexOf(' ')+1));
                 line = reader.readLine();
             }
             reader.close();

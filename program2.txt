@@ -1,0 +1,34 @@
+0x0000 addi x10 x0 a
+0x0004 addi x1 x0 1
+0x0008 subi x16 x10 1
+0x000c addi x15 x10 0
+0x0010 addi x17 x16 0
+0x0014 addi x9 x10 0
+0x0018 jal x20 F4
+
+
+0x0200 jal x25 2
+0x0204 bge x1 x15 FFE
+0x0208 addi x0 x0 0
+0x020c jal x26 2
+0x0210 bge x1 x16 FE
+0x0214 add x10 x10 x9
+0x0218 subi x16 x16 1
+0x021c jalr x20 x26 0
+
+
+0x040c subi x15 x15 1
+0x0410 addi x9 x10 0
+0x0414 subi x17 x17 1
+0x0418 subi x16 x17 0
+0x041c jalr x20 x25 0
+
+0x2200 addi x0 x0 0
+0x2204 addi x3 x3 3
+0x2208 and x11 x10 x3
+0x220c beq x3 x11 FFE
+0x2210 addi x11 x0 1
+0x2214 SON
+
+0x4208 addi x11 x0 0
+0x420c SON
