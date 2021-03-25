@@ -1,0 +1,3 @@
+Cevrim Sayisi: 80
+Yurutulen Toplam Buyruk: 14
+Yurutme Zamani: 1.6E-7
